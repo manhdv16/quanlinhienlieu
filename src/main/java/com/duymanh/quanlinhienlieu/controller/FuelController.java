@@ -30,7 +30,7 @@ public class FuelController
     @Autowired
     private FuelService fuelService;
 
-    @PostMapping()
+    @PostMapping
     public ResponseEntity<?> createFuel(@RequestBody @Valid CreateFuelRequest createFuelRequest)
     {
         Fuel fuel = fuelService.createFuel(createFuelRequest);
@@ -50,13 +50,18 @@ public class FuelController
     public ResponseEntity<?>  getFuelsByTimeRange(@RequestParam LocalDate startDate, @RequestParam LocalDate endDate)
     {
         List<Fuel> listFuel = fuelService.getFuelsByTimeRange(startDate, endDate);
-        if(listFuel.isEmpty()) throw new AppException(ErrorCode.TIME_NOT_FOUND);
+        if(listFuel.isEmpty()){
+            LOGGER.error("Time not found with start date: ",startDate," and end date: ",endDate);
+            throw new AppException(ErrorCode.TIME_NOT_FOUND);
+        }
+        // Create a map to store fuel type and total quantity
         Map<String, Integer> mapTypeFuel = new HashMap<>();
+        String type;
         for(Fuel f : listFuel) {
-            String type = f.getFuelType().getFuelTypeName();
+            type = f.getFuelType().getFuelTypeName();
+            // Check if mapTypeFuel contains key type
             if(mapTypeFuel.containsKey(type)){
-                int quantity = mapTypeFuel.get(type)+f.getQuantity();
-                mapTypeFuel.put(type,quantity);
+                mapTypeFuel.put(type, mapTypeFuel.get(type)+f.getQuantity());
             }else{
                 mapTypeFuel.put(type,f.getQuantity());
             }
@@ -66,8 +71,9 @@ public class FuelController
     }
     @GetMapping("/consume")
     public ResponseEntity<?> getConsumer(@RequestBody ConsumerRequest request) {
-        Map<Integer, Integer> dataConsume = request.getMap();
-        Map<Integer,List<Fuel>>mapFuel = fuelService.getConsumerFromDb(dataConsume);
+        // Get a list consumed fuels for each consumer
+        Map<Integer,List<Fuel>>mapFuel = fuelService.getConsumerFromDb(request.getMap());
+
         ApiResponse<Map<Integer,List<Fuel>>> response = new ApiResponse<>(200,"Get a list of successfully consumed fuels", mapFuel);
         return new ResponseEntity<>(response,HttpStatus.OK);
     }
