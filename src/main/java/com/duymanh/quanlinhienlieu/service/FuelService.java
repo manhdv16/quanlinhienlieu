@@ -25,7 +25,7 @@ public class FuelService
     @Autowired
     FuelTypeRepository fuelTypeRepository;
 
-    public void createFuel(CreateFuelRequest createFuelRequest)
+    public Fuel createFuel(CreateFuelRequest createFuelRequest)
     {
         Fuel fuel = new Fuel();
 
@@ -36,7 +36,7 @@ public class FuelService
         if(fuelTypeOpt.isEmpty()) throw new AppException(ErrorCode.FUEL_TYPE_NOT_FOUND);
         fuel.setFuelType(fuelTypeOpt.get());
 
-        fuelRepository.save(fuel);
+        return fuelRepository.save(fuel);
     }
 
     public List<Fuel> getAllFuels()
