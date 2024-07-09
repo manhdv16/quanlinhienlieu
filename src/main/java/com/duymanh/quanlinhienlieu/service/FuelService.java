@@ -11,9 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
-import java.util.List;
-import java.util.Locale;
-import java.util.Optional;
+import java.util.*;
 
 @Service
 @FieldDefaults(level = AccessLevel.PRIVATE)
@@ -46,5 +44,18 @@ public class FuelService
     public List<Fuel> getFuelsByTimeRange(LocalDate startDate, LocalDate endDate)
     {
         return fuelRepository.findByTimeBetweenOrderByTimeDesc(startDate, endDate);
+    }
+    public Map<Integer,List<Fuel>> getConsumerFromDb(Map<Integer, Integer> data) {
+        Map<Integer,List<Fuel>> consume = new HashMap<>();
+        for(int key : data.keySet()) {
+            int quantity = fuelRepository.getQuantityByFuelTypeId(key);
+            if(quantity<data.get(key)){
+                consume.put(key, null);
+            }else{
+                List<Fuel> listRecordConsume = fuelRepository.getRecordConsume(key,data.get(key));
+                consume.put(key, listRecordConsume);
+            }
+        }
+        return consume;
     }
 }
