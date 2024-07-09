@@ -5,6 +5,7 @@ import lombok.Data;
 import java.util.Map;
 
 @Data
-public class ConsumerRequest {
+public class ConsumerRequest
+{
     private Map<Integer, Integer> map;
 }
