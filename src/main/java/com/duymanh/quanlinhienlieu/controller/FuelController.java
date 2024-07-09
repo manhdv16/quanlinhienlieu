@@ -3,15 +3,17 @@ package com.duymanh.quanlinhienlieu.controller;
 import com.duymanh.quanlinhienlieu.DTO.ConsumerRequest;
 import com.duymanh.quanlinhienlieu.DTO.CreateFuelRequest;
 import com.duymanh.quanlinhienlieu.entity.Fuel;
+import com.duymanh.quanlinhienlieu.exception.AppException;
+import com.duymanh.quanlinhienlieu.exception.ErrorCode;
 import com.duymanh.quanlinhienlieu.response.ApiResponse;
 import com.duymanh.quanlinhienlieu.response.FuelResponse;
 import com.duymanh.quanlinhienlieu.service.FuelService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -23,8 +25,8 @@ public class FuelController
     @Autowired
     private FuelService fuelService;
 
-    @PostMapping("/create")
-    public ResponseEntity<?> createFuel(@RequestBody CreateFuelRequest createFuelRequest)
+    @PostMapping()
+    public ResponseEntity<?> createFuel(@RequestBody @Valid CreateFuelRequest createFuelRequest)
     {
         fuelService.createFuel(createFuelRequest);
         ApiResponse<String> response = new ApiResponse<>(200,"created successfully",null);
@@ -43,6 +45,7 @@ public class FuelController
     public ResponseEntity<?>  getFuelsByTimeRange(@RequestParam LocalDate startDate, @RequestParam LocalDate endDate)
     {
         List<Fuel> listFuel = fuelService.getFuelsByTimeRange(startDate, endDate);
+        if(listFuel.isEmpty()) throw new AppException(ErrorCode.TIME_NOT_FOUND);
         Map<String, Integer> mapTypeFuel = new HashMap<>();
         for(Fuel f : listFuel) {
             String type = f.getFuelType().getFuelTypeName();
