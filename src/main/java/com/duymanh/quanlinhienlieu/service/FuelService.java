@@ -25,6 +25,12 @@ public class FuelService
     @Autowired
     FuelTypeRepository fuelTypeRepository;
 
+    /**
+     * Function is used to create Fuel obj
+     * @param createFuelRequest
+     * Check exception if fuel type not found
+     * @return Fuel Object
+     */
     public Fuel createFuel(CreateFuelRequest createFuelRequest)
     {
         Fuel fuel = new Fuel();
@@ -32,18 +38,33 @@ public class FuelService
         fuel.setQuantity(createFuelRequest.getQuantity());
         fuel.setTime(createFuelRequest.getTime());
         fuel.setPrice(createFuelRequest.getPrice());
+
         Optional<FuelType> fuelTypeOpt = fuelTypeRepository.findById(createFuelRequest.getFuelTypeID());
-        if(fuelTypeOpt.isEmpty()) throw new AppException(ErrorCode.FUEL_TYPE_NOT_FOUND);
+
+        // Check fuelTypeID
+        if(fuelTypeOpt.isEmpty())
+        {
+            throw new AppException(ErrorCode.FUEL_TYPE_NOT_FOUND);
+        }
+
         fuel.setFuelType(fuelTypeOpt.get());
 
         return fuelRepository.save(fuel);
     }
 
+    // Function is used to get all fuels
     public List<Fuel> getAllFuels()
     {
         return fuelRepository.findAll();
     }
 
+    /**
+     * Function is used to get fuels in time range
+     * @param startDate
+     * @param endDate
+     * If endDate is before startDate, swap endDate and startDate
+     * @return List<Fuel>
+     */
     public List<Fuel> getFuelsByTimeRange(LocalDate startDate, LocalDate endDate)
     {
         if(endDate.isBefore(startDate))
@@ -52,12 +73,23 @@ public class FuelService
         }
         return fuelRepository.findByTimeBetweenOrderByTimeDesc(startDate, endDate);
     }
+
+    /**
+     * Function is used to get a map<fuelTypeID, List<Fuel>> and the input is a map<fuelTypeID, QuantityNeedToGet>
+     * with condition total quantity fuels have the same fuelTypeID and total quantity < QuantityNeedToGet
+     * @param data Map<Integer, Integer>
+     * @return Map<fuelTypeID,List<Fuel>>
+     */
     public Map<Integer,List<Fuel>> getConsumerFromDb(Map<Integer, Integer> data)
     {
         Map<Integer,List<Fuel>> consume = new HashMap<>();
-        for(int key : data.keySet()) {
-            int quantity = fuelRepository.getQuantityByFuelTypeId(key);
-            if(quantity<data.get(key)){
+        int quantity;
+        for(int key : data.keySet())
+        {
+            // Total quantity by fuelTypeID
+            quantity = fuelRepository.getQuantityByFuelTypeId(key);
+            // Check condition
+            if(quantity<data.get(key)) {
                 consume.put(key, null);
             }else{
                 List<Fuel> listRecordConsume = fuelRepository.getRecordConsume(key,data.get(key));

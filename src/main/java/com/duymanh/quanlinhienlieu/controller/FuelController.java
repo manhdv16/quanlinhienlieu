@@ -34,12 +34,7 @@ public class FuelController
     public ResponseEntity<?> createFuel(@RequestBody @Valid CreateFuelRequest createFuelRequest)
     {
         Fuel fuel = fuelService.createFuel(createFuelRequest);
-        if(fuel == null)
-        {
-            LOGGER.error("Failed to create fuel");
-        }
         ApiResponse<String> response = new ApiResponse<>(200,"created successfully",null);
-        LOGGER.info("Fuel + {}", fuel.getFuelID());
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
 
