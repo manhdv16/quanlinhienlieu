@@ -1,0 +1,246 @@
+2024-07-10 09:55:28 INFO  Version:21 - HV000001: Hibernate Validator 8.0.1.Final
+2024-07-10 09:55:28 INFO  QuanlinhienlieuApplication:50 - Starting QuanlinhienlieuApplication using Java 18.0.2 with PID 7828 (C:\z_backup\intellij\quanlinhienlieu\target\classes started by LAPTOP24H in C:\z_backup\intellij\quanlinhienlieu)
+2024-07-10 09:55:28 INFO  QuanlinhienlieuApplication:654 - No active profile set, falling back to 1 default profile: "default"
+2024-07-10 09:55:31 INFO  RepositoryConfigurationDelegate:143 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-10 09:55:31 INFO  RepositoryConfigurationDelegate:211 - Finished Spring Data repository scanning in 83 ms. Found 2 JPA repository interfaces.
+2024-07-10 09:55:32 INFO  TomcatWebServer:111 - Tomcat initialized with port 8081 (http)
+2024-07-10 09:55:32 INFO  Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8081"]
+2024-07-10 09:55:32 INFO  StandardService:173 - Starting service [Tomcat]
+2024-07-10 09:55:32 INFO  StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-10 09:55:34 INFO  [/]:173 - Initializing Spring embedded WebApplicationContext
+2024-07-10 09:55:34 INFO  ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 6089 ms
+2024-07-10 09:55:35 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-10 09:55:37 INFO  Version:44 - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-10 09:55:37 INFO  RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2024-07-10 09:55:39 INFO  SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-10 09:55:39 INFO  HikariDataSource:109 - HikariPool-1 - Starting...
+2024-07-10 09:55:39 INFO  HikariPool:554 - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@67ceeffd
+2024-07-10 09:55:39 INFO  HikariDataSource:122 - HikariPool-1 - Start completed.
+2024-07-10 09:55:42 INFO  JtaPlatformInitiator:59 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-10 09:55:43 INFO  LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-10 09:55:43 INFO  QueryEnhancerFactory:49 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-10 09:55:44 WARN  JpaBaseConfiguration$JpaWebConfiguration:236 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-10 09:55:45 INFO  Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8081"]
+2024-07-10 09:55:45 INFO  TomcatWebServer:243 - Tomcat started on port 8081 (http) with context path '/'
+2024-07-10 09:55:45 INFO  QuanlinhienlieuApplication:56 - Started QuanlinhienlieuApplication in 18.337 seconds (process running for 23.161)
+2024-07-10 09:55:47 INFO  [/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-10 09:55:47 INFO  DispatcherServlet:532 - Initializing Servlet 'dispatcherServlet'
+2024-07-10 09:55:47 INFO  DispatcherServlet:554 - Completed initialization in 2 ms
+2024-07-10 09:55:47 ERROR FuelService:49 - Fuel type not found with type id: 11
+2024-07-10 09:56:17 INFO  FuelController:84 - Current state of type fuel map after a processingF0: [50]
+2024-07-10 09:56:17 INFO  FuelController:84 - Current state of type fuel map after a processingF1: [50, 20]
+2024-07-10 09:56:17 INFO  FuelController:84 - Current state of type fuel map after a processingF1: [50, 50]
+2024-07-10 09:56:17 INFO  FuelController:84 - Current state of type fuel map after a processingF2: [50, 50, 30]
+2024-07-10 09:56:17 INFO  FuelController:84 - Current state of type fuel map after a processingF4: [50, 50, 30, 30]
+2024-07-10 09:56:17 INFO  FuelController:84 - Current state of type fuel map after a processingF5: [50, 50, 30, 30, 30]
+2024-07-10 09:56:17 INFO  FuelController:84 - Current state of type fuel map after a processingF1: [50, 90, 30, 30, 30]
+2024-07-10 09:58:14 WARN  DefaultHandlerExceptionResolver:247 - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'endDate' for method parameter type LocalDate is not present]
+2024-07-10 09:59:09 INFO  FuelController:84 - Current state of type fuel map after a processingF0: [50]
+2024-07-10 09:59:38 INFO  FuelService:102 - Current state of consume map after processing key 1: {1=null}
+2024-07-10 09:59:38 INFO  FuelService:102 - Current state of consume map after processing key 2: {1=null, 2=[com.duymanh.quanlinhienlieu.entity.Fuel@69c4483f, com.duymanh.quanlinhienlieu.entity.Fuel@29946fd6]}
+2024-07-10 10:00:44 INFO  LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-10 10:00:44 INFO  HikariDataSource:349 - HikariPool-1 - Shutdown initiated...
+2024-07-10 10:00:44 INFO  HikariDataSource:351 - HikariPool-1 - Shutdown completed.
+2024-07-10 10:20:41 INFO  Version:21 - HV000001: Hibernate Validator 8.0.1.Final
+2024-07-10 10:20:41 INFO  QuanlinhienlieuApplication:50 - Starting QuanlinhienlieuApplication using Java 18.0.2 with PID 7876 (C:\z_backup\intellij\quanlinhienlieu\target\classes started by LAPTOP24H in C:\z_backup\intellij\quanlinhienlieu)
+2024-07-10 10:20:41 INFO  QuanlinhienlieuApplication:654 - No active profile set, falling back to 1 default profile: "default"
+2024-07-10 10:20:42 INFO  RepositoryConfigurationDelegate:143 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-10 10:20:42 INFO  RepositoryConfigurationDelegate:211 - Finished Spring Data repository scanning in 70 ms. Found 2 JPA repository interfaces.
+2024-07-10 10:20:43 INFO  TomcatWebServer:111 - Tomcat initialized with port 8081 (http)
+2024-07-10 10:20:43 INFO  Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8081"]
+2024-07-10 10:20:43 INFO  StandardService:173 - Starting service [Tomcat]
+2024-07-10 10:20:43 INFO  StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-10 10:20:43 INFO  [/]:173 - Initializing Spring embedded WebApplicationContext
+2024-07-10 10:20:43 INFO  ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 2075 ms
+2024-07-10 10:20:43 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-10 10:20:43 INFO  Version:44 - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-10 10:20:44 INFO  RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2024-07-10 10:20:44 INFO  SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-10 10:20:44 INFO  HikariDataSource:109 - HikariPool-1 - Starting...
+2024-07-10 10:20:45 INFO  HikariPool:554 - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@4d825dbe
+2024-07-10 10:20:45 INFO  HikariDataSource:122 - HikariPool-1 - Start completed.
+2024-07-10 10:20:47 INFO  JtaPlatformInitiator:59 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-10 10:20:47 INFO  LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-10 10:20:47 INFO  QueryEnhancerFactory:49 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-10 10:20:48 WARN  JpaBaseConfiguration$JpaWebConfiguration:236 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-10 10:20:48 INFO  Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8081"]
+2024-07-10 10:20:49 INFO  TomcatWebServer:243 - Tomcat started on port 8081 (http) with context path '/'
+2024-07-10 10:20:49 INFO  QuanlinhienlieuApplication:56 - Started QuanlinhienlieuApplication in 8.794 seconds (process running for 11.283)
+2024-07-10 10:20:56 INFO  [/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-10 10:20:56 INFO  DispatcherServlet:532 - Initializing Servlet 'dispatcherServlet'
+2024-07-10 10:20:56 INFO  DispatcherServlet:554 - Completed initialization in 2 ms
+2024-07-10 10:20:56 INFO  FuelService:102 - Current state of consume map after processing key 1: {1=null}
+2024-07-10 10:20:56 INFO  FuelService:102 - Current state of consume map after processing key 2: {1=null, 2=[com.duymanh.quanlinhienlieu.entity.Fuel@6db9ae6c, com.duymanh.quanlinhienlieu.entity.Fuel@32dc7b1e]}
+2024-07-10 10:21:06 INFO  FuelService:102 - Current state of consume map after processing key 1: {1=null}
+2024-07-10 10:21:06 INFO  FuelService:102 - Current state of consume map after processing key 2: {1=null, 2=[com.duymanh.quanlinhienlieu.entity.Fuel@bd6e3b7, com.duymanh.quanlinhienlieu.entity.Fuel@7b62c5c2]}
+2024-07-10 10:21:13 INFO  FuelService:102 - Current state of consume map after processing key 1: {1=null}
+2024-07-10 10:21:13 INFO  FuelService:102 - Current state of consume map after processing key 2: {1=null, 2=[com.duymanh.quanlinhienlieu.entity.Fuel@6cc4f370, com.duymanh.quanlinhienlieu.entity.Fuel@4746d54, com.duymanh.quanlinhienlieu.entity.Fuel@47e28565]}
+2024-07-10 10:21:26 INFO  LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-10 10:21:26 INFO  HikariDataSource:349 - HikariPool-1 - Shutdown initiated...
+2024-07-10 10:21:26 INFO  HikariDataSource:351 - HikariPool-1 - Shutdown completed.
+2024-07-10 10:25:31 INFO  Version:21 - HV000001: Hibernate Validator 8.0.1.Final
+2024-07-10 10:25:31 INFO  QuanlinhienlieuApplication:50 - Starting QuanlinhienlieuApplication using Java 18.0.2 with PID 11524 (C:\z_backup\intellij\quanlinhienlieu\target\classes started by LAPTOP24H in C:\z_backup\intellij\quanlinhienlieu)
+2024-07-10 10:25:31 INFO  QuanlinhienlieuApplication:654 - No active profile set, falling back to 1 default profile: "default"
+2024-07-10 10:25:32 INFO  RepositoryConfigurationDelegate:143 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-10 10:25:32 INFO  RepositoryConfigurationDelegate:211 - Finished Spring Data repository scanning in 68 ms. Found 2 JPA repository interfaces.
+2024-07-10 10:25:33 INFO  TomcatWebServer:111 - Tomcat initialized with port 8081 (http)
+2024-07-10 10:25:33 INFO  Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8081"]
+2024-07-10 10:25:33 INFO  StandardService:173 - Starting service [Tomcat]
+2024-07-10 10:25:33 INFO  StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-10 10:25:33 INFO  [/]:173 - Initializing Spring embedded WebApplicationContext
+2024-07-10 10:25:33 INFO  ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 1945 ms
+2024-07-10 10:25:33 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-10 10:25:33 INFO  Version:44 - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-10 10:25:33 INFO  RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2024-07-10 10:25:34 INFO  SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-10 10:25:34 INFO  HikariDataSource:109 - HikariPool-1 - Starting...
+2024-07-10 10:25:34 INFO  HikariPool:554 - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@2487e20
+2024-07-10 10:25:34 INFO  HikariDataSource:122 - HikariPool-1 - Start completed.
+2024-07-10 10:25:36 INFO  JtaPlatformInitiator:59 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-10 10:25:36 INFO  LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-10 10:25:36 INFO  QueryEnhancerFactory:49 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-10 10:25:38 WARN  JpaBaseConfiguration$JpaWebConfiguration:236 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-10 10:25:38 INFO  Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8081"]
+2024-07-10 10:25:38 INFO  TomcatWebServer:243 - Tomcat started on port 8081 (http) with context path '/'
+2024-07-10 10:25:38 INFO  QuanlinhienlieuApplication:56 - Started QuanlinhienlieuApplication in 8.529 seconds (process running for 10.448)
+2024-07-10 10:25:46 INFO  [/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-10 10:25:46 INFO  DispatcherServlet:532 - Initializing Servlet 'dispatcherServlet'
+2024-07-10 10:25:46 INFO  DispatcherServlet:554 - Completed initialization in 1 ms
+2024-07-10 10:25:46 ERROR FuelService:74 - End date is before start date
+2024-07-10 10:25:46 ERROR [dispatcherServlet]:175 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "java.util.List.isEmpty()" because "listFuel" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "java.util.List.isEmpty()" because "listFuel" is null
+	at com.duymanh.quanlinhienlieu.controller.FuelController.getFuelsByTimeRange(FuelController.java:70) ~[classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.25.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.25.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) [tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) [tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) [tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) [tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) [tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) [tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) [tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) [tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) [tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) [tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) [tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) [tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) [tomcat-embed-core-10.1.25.jar:10.1.25]
+	at java.base/java.lang.Thread.run(Thread.java:833) [?:?]
+2024-07-10 10:26:31 INFO  LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-10 10:26:31 INFO  HikariDataSource:349 - HikariPool-1 - Shutdown initiated...
+2024-07-10 10:26:31 INFO  HikariDataSource:351 - HikariPool-1 - Shutdown completed.
+2024-07-10 10:26:41 INFO  Version:21 - HV000001: Hibernate Validator 8.0.1.Final
+2024-07-10 10:26:41 INFO  QuanlinhienlieuApplication:50 - Starting QuanlinhienlieuApplication using Java 18.0.2 with PID 14060 (C:\z_backup\intellij\quanlinhienlieu\target\classes started by LAPTOP24H in C:\z_backup\intellij\quanlinhienlieu)
+2024-07-10 10:26:42 INFO  QuanlinhienlieuApplication:654 - No active profile set, falling back to 1 default profile: "default"
+2024-07-10 10:26:43 INFO  RepositoryConfigurationDelegate:143 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-10 10:26:43 INFO  RepositoryConfigurationDelegate:211 - Finished Spring Data repository scanning in 78 ms. Found 2 JPA repository interfaces.
+2024-07-10 10:26:44 INFO  TomcatWebServer:111 - Tomcat initialized with port 8081 (http)
+2024-07-10 10:26:44 INFO  Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8081"]
+2024-07-10 10:26:44 INFO  StandardService:173 - Starting service [Tomcat]
+2024-07-10 10:26:44 INFO  StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-10 10:26:44 INFO  [/]:173 - Initializing Spring embedded WebApplicationContext
+2024-07-10 10:26:44 INFO  ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 2347 ms
+2024-07-10 10:26:44 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-10 10:26:44 INFO  Version:44 - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-10 10:26:44 INFO  RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2024-07-10 10:26:45 INFO  SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-10 10:26:45 INFO  HikariDataSource:109 - HikariPool-1 - Starting...
+2024-07-10 10:26:45 INFO  HikariPool:554 - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@727453a3
+2024-07-10 10:26:45 INFO  HikariDataSource:122 - HikariPool-1 - Start completed.
+2024-07-10 10:26:47 INFO  JtaPlatformInitiator:59 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-10 10:26:47 INFO  LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-10 10:26:48 INFO  QueryEnhancerFactory:49 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-10 10:26:48 WARN  JpaBaseConfiguration$JpaWebConfiguration:236 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-10 10:26:49 INFO  Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8081"]
+2024-07-10 10:26:49 INFO  TomcatWebServer:243 - Tomcat started on port 8081 (http) with context path '/'
+2024-07-10 10:26:49 INFO  QuanlinhienlieuApplication:56 - Started QuanlinhienlieuApplication in 8.676 seconds (process running for 10.76)
+2024-07-10 10:26:53 INFO  [/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-10 10:26:53 INFO  DispatcherServlet:532 - Initializing Servlet 'dispatcherServlet'
+2024-07-10 10:26:53 INFO  DispatcherServlet:554 - Completed initialization in 1 ms
+2024-07-10 10:26:53 ERROR FuelService:74 - End date is before start date
+2024-07-10 10:26:53 ERROR FuelController:71 - Time not found with start date: 
+2024-07-10 10:29:14 INFO  LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-10 10:29:14 INFO  HikariDataSource:349 - HikariPool-1 - Shutdown initiated...
+2024-07-10 10:29:14 INFO  HikariDataSource:351 - HikariPool-1 - Shutdown completed.
+2024-07-10 10:29:24 INFO  Version:21 - HV000001: Hibernate Validator 8.0.1.Final
+2024-07-10 10:29:24 INFO  QuanlinhienlieuApplication:50 - Starting QuanlinhienlieuApplication using Java 18.0.2 with PID 7356 (C:\z_backup\intellij\quanlinhienlieu\target\classes started by LAPTOP24H in C:\z_backup\intellij\quanlinhienlieu)
+2024-07-10 10:29:24 INFO  QuanlinhienlieuApplication:654 - No active profile set, falling back to 1 default profile: "default"
+2024-07-10 10:29:25 INFO  RepositoryConfigurationDelegate:143 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-10 10:29:25 INFO  RepositoryConfigurationDelegate:211 - Finished Spring Data repository scanning in 69 ms. Found 2 JPA repository interfaces.
+2024-07-10 10:29:26 INFO  TomcatWebServer:111 - Tomcat initialized with port 8081 (http)
+2024-07-10 10:29:26 INFO  Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8081"]
+2024-07-10 10:29:26 INFO  StandardService:173 - Starting service [Tomcat]
+2024-07-10 10:29:26 INFO  StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-10 10:29:26 INFO  [/]:173 - Initializing Spring embedded WebApplicationContext
+2024-07-10 10:29:26 INFO  ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 2162 ms
+2024-07-10 10:29:27 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-10 10:29:27 INFO  Version:44 - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-10 10:29:27 INFO  RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2024-07-10 10:29:27 INFO  SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-10 10:29:27 INFO  HikariDataSource:109 - HikariPool-1 - Starting...
+2024-07-10 10:29:27 INFO  HikariPool:554 - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@1958c0d9
+2024-07-10 10:29:27 INFO  HikariDataSource:122 - HikariPool-1 - Start completed.
+2024-07-10 10:29:29 INFO  JtaPlatformInitiator:59 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-10 10:29:29 INFO  LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-10 10:29:29 INFO  QueryEnhancerFactory:49 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-10 10:29:30 WARN  JpaBaseConfiguration$JpaWebConfiguration:236 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-10 10:29:31 INFO  Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8081"]
+2024-07-10 10:29:31 INFO  TomcatWebServer:243 - Tomcat started on port 8081 (http) with context path '/'
+2024-07-10 10:29:31 INFO  QuanlinhienlieuApplication:56 - Started QuanlinhienlieuApplication in 7.924 seconds (process running for 10.551)
+2024-07-10 10:29:35 INFO  [/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-10 10:29:35 INFO  DispatcherServlet:532 - Initializing Servlet 'dispatcherServlet'
+2024-07-10 10:29:35 INFO  DispatcherServlet:554 - Completed initialization in 2 ms
+2024-07-10 10:29:35 ERROR FuelService:74 - End date is before start date
+2024-07-10 10:29:51 INFO  FuelController:85 - Current state of type fuel map after a processingF0: [50]
+2024-07-10 10:29:51 INFO  FuelController:85 - Current state of type fuel map after a processingF1: [50, 20]
+2024-07-10 10:29:51 INFO  FuelController:85 - Current state of type fuel map after a processingF1: [50, 50]
+2024-07-10 10:29:51 INFO  FuelController:85 - Current state of type fuel map after a processingF2: [50, 50, 30]
+2024-07-10 10:29:51 INFO  FuelController:85 - Current state of type fuel map after a processingF4: [50, 50, 30, 30]
+2024-07-10 10:29:51 INFO  FuelController:85 - Current state of type fuel map after a processingF5: [50, 50, 30, 30, 30]
+2024-07-10 10:32:00 INFO  FuelController:85 - Current state of type fuel map after a processingF0: [50]
+2024-07-10 10:32:00 INFO  FuelController:85 - Current state of type fuel map after a processingF1: [50, 20]
+2024-07-10 10:32:00 INFO  FuelController:85 - Current state of type fuel map after a processingF1: [50, 50]
+2024-07-10 10:32:00 INFO  FuelController:85 - Current state of type fuel map after a processingF2: [50, 50, 30]
+2024-07-10 10:32:00 INFO  FuelController:85 - Current state of type fuel map after a processingF4: [50, 50, 30, 30]
+2024-07-10 10:32:00 INFO  FuelController:85 - Current state of type fuel map after a processingF5: [50, 50, 30, 30, 30]
+2024-07-10 10:32:35 INFO  FuelController:85 - Current state of type fuel map after a processingF0: [50]
+2024-07-10 10:32:35 INFO  FuelController:85 - Current state of type fuel map after a processingF1: [50, 20]
+2024-07-10 10:32:35 INFO  FuelController:85 - Current state of type fuel map after a processingF1: [50, 50]
+2024-07-10 10:32:35 INFO  FuelController:85 - Current state of type fuel map after a processingF2: [50, 50, 30]
+2024-07-10 10:32:35 INFO  FuelController:85 - Current state of type fuel map after a processingF4: [50, 50, 30, 30]
+2024-07-10 10:32:35 INFO  FuelController:85 - Current state of type fuel map after a processingF5: [50, 50, 30, 30, 30]
+2024-07-10 10:42:40 INFO  LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-10 10:42:40 INFO  HikariDataSource:349 - HikariPool-1 - Shutdown initiated...
+2024-07-10 10:42:40 INFO  HikariDataSource:351 - HikariPool-1 - Shutdown completed.

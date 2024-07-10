@@ -65,6 +65,7 @@ public class FuelController
     @GetMapping("/fuels-bytimerange")
     public ResponseEntity<?>  getFuelsByTimeRange(@RequestParam LocalDate startDate, @RequestParam LocalDate endDate)
     {
+
         List<Fuel> listFuel = fuelService.getFuelsByTimeRange(startDate, endDate);
         if(listFuel.isEmpty()){
             LOGGER.error("Time not found with start date: ",startDate," and end date: ",endDate);

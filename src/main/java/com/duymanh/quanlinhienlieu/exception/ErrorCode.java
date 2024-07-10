@@ -9,6 +9,7 @@ public enum ErrorCode
     QUANTITY_INVALID(400, "Invalid quantity"),
     PRICE_INVALID(400, "Invalid price"),
     TIME_NOT_FOUND(400, "Not found fuel"),
+    TIME_INVALID(400, "End date is before start date")
     ;
 
     private final int code;

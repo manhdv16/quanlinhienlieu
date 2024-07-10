@@ -23,7 +23,7 @@ public interface FuelRepository extends JpaRepository<Fuel, Integer> {
             "    FROM fuel f " +
             "    WHERE f.fuel_type_id = ?1 " +
             ") AS temp ON f1.fuel_id = temp.fuel_id " +
-            "WHERE temp.running_total < ?2 OR temp.running_total - f1.quantity < ?2 " +
+            "WHERE temp.running_total - f1.quantity < ?2 " +
             "ORDER BY f1.fuel_id", nativeQuery = true)
     List<Fuel> getRecordConsume(int fuelTypeId, int quantity);
 

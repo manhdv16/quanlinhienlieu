@@ -71,7 +71,8 @@ public class FuelService
 
         if(endDate.isBefore(startDate))
         {
-            return fuelRepository.findByTimeBetweenOrderByTimeDesc(endDate, startDate);
+            LOGGER.error("End date is before start date");
+            throw new AppException(ErrorCode.TIME_INVALID);
         }
         return fuelRepository.findByTimeBetweenOrderByTimeDesc(startDate, endDate);
     }
