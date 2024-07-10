@@ -68,6 +68,7 @@ public class FuelService
      */
     public List<Fuel> getFuelsByTimeRange(LocalDate startDate, LocalDate endDate)
     {
+
         if(endDate.isBefore(startDate))
         {
             return fuelRepository.findByTimeBetweenOrderByTimeDesc(endDate, startDate);
@@ -98,6 +99,7 @@ public class FuelService
                 List<Fuel> listRecordConsume = fuelRepository.getRecordConsume(key,data.get(key));
                 consume.put(key, listRecordConsume);
             }
+            LOGGER.info("Current state of consume map after processing key " + key + ": " + consume);
         }
         return consume;
     }

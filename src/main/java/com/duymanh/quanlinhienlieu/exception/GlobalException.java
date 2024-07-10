@@ -19,6 +19,7 @@ public class GlobalException
     {
         ErrorCode errorCode = e.getErrorCode();
 
+        // create api response and set value for fields
         ApiResponse apiResponse = new ApiResponse();
         apiResponse.setStatus(errorCode.getCode());
         apiResponse.setMessage(e.getMessage());
@@ -38,6 +39,7 @@ public class GlobalException
         String enumKey = e.getFieldError().getDefaultMessage();
         ErrorCode errorCode = ErrorCode.valueOf(enumKey);
 
+        // create api response and set value for fields
         ApiResponse apiResponse = new ApiResponse();
         apiResponse.setStatus(errorCode.getCode());
         apiResponse.setMessage(errorCode.getMessage());
